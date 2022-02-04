@@ -1,0 +1,20 @@
+.p {
+    margin: 48px;
+    /* display: flex; */
+  }
+  .p .q {
+    display: flex;
+    margin: 0px 100px;
+    justify-content: center;
+  }
+  .p .q img {
+    margin: 0px 35px;
+    width: 110px;
+    filter: grayscale(1);
+    transition-property: grayscale;
+    transition: 0.65s;
+  }
+  .p .q img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+  }

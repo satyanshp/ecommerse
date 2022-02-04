@@ -1,0 +1,13 @@
+.banner{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+.banner div{
+    cursor: pointer;
+    object-fit: contain;  
+}
+.banner div img{
+    width: 100%;
+}

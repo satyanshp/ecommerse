@@ -1,0 +1,61 @@
+.carosel {
+  display: flex;
+  /* width: 100%; */
+  height: 342px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin: 5px;
+  /* margin-top: 76.83px; */
+}
+
+.container {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.container.active {
+  opacity: 1;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  display: flex;
+  width: 70px;
+  height: 342px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.right-arrow {
+  right: 0;
+}
+.left-arrow {
+  left: 0;
+}
+.right-arrow:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to left,
+    rgba(128, 128, 128, 0.396),
+    rgba(128, 128, 128, 0)
+  );
+  transition: 200ms;
+}
+.left-arrow:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    rgba(128, 128, 128, 0.396),
+    rgba(128, 128, 128, 0)
+  );
+  transition: 200ms;
+}

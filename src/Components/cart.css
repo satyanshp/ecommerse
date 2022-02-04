@@ -1,0 +1,245 @@
+.cart{
+    display: grid;
+    height: auto;
+    margin: 60px 100px;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "main main sidebar";
+}
+
+#main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+#main .cart-header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px 50px;
+ border-bottom: rgba(167, 167, 167, 0.555) solid 1px;
+}
+#main .cart-header select{
+    height: 40px;
+    width: 200px;
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+    padding-left: 5px;
+    letter-spacing: .5px;
+}
+/* #main .cart-header select option{
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+    padding-left: 5px;
+    letter-spacing: .5px;
+    height: 40px !important;
+} */
+#main .div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.deliver-to{
+    display: flex;
+    font-weight: bolder;
+    color: gray;
+    align-items: center;
+    gap: 20px;
+}
+.deliver-to p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 318px;
+}
+
+#sidebar div{
+    display: flex;
+    flex-direction: column;
+}
+#sidebar div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    margin: 12px 8%;
+    align-items: center;
+}
+.total-amount{
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px;
+    margin-top: 10px;
+    border-top: dotted gray 1px;
+    border-bottom: dotted gray 1px;
+}
+.total-amount h2{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight:600;
+    margin: 16px 0px;
+    
+}
+.saving{
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm{
+    height: 80px;
+    position: relative;
+    box-shadow: 0px 1px 5px gray;
+}
+.confirm button{
+    position: absolute;
+    right: 50px;
+    border: none;
+    background-color: rgb(10, 121, 69);
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 55px;
+    width: 260px;
+}
+.confirm button:hover{
+    cursor: pointer;
+}
+
+
+
+.bill{
+    height: 50px;
+    /* align-items: center; */
+    justify-content: center;
+}
+.bill h2{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding: 0px 20px;
+    height: 100%;
+    text-align: left;
+    font-size: 16px;
+    /* justify-content: center; */
+    align-items: center;
+    color: gray;
+    border-bottom: rgba(167, 167, 167, 0.555) solid 1px;
+
+}
+/* .price{
+    justify-content: space-between !important;
+    margin: 0px 20px;
+} */
+.pop{
+    margin-top: 20px !important;
+}
+#sidebar p{
+    margin: 0;
+    padding: 0;
+}
+
+/* PRODUCT ARRAY LIST CSS */
+/* PRODUCT ARRAY LIST CSS */
+.cartItems{
+  display: flex;
+  flex-direction: column;
+}
+.cartItems:last-child{
+    border-bottom: none !important;
+}
+
+.itemss{
+    display: flex;
+    width: 100%;
+    height: 180px;
+    justify-content: space-around;
+    border-bottom: rgba(167, 167, 167, 0.555) solid 1px;
+}
+.itemss div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemss img{
+    width: 120px;
+     
+}
+.info-container{
+    flex-direction: column;
+}
+.item-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.item-info > * {
+    width: 100%;
+    text-align: left !important;
+}
+.item-info p,.item-info h3{
+    margin: 0;
+    padding: 0;
+}
+.item-info h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.item-info span{
+    font-size: large;
+    font-weight: 700;
+}
+.info-btn{
+    gap: 10px;
+    margin-top: 10px;
+}
+.info-btn button{
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+
+
+.delivery-info{
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+}
+.delivery-details{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: left !important;
+}
+.delivery-details h2{
+    font-size: 15px;
+    font-weight: 650;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.free{
+    font-size: 13px;
+    color: green;
+    font-weight: 500;
+}
+.replace-policy{
+    width: 100%;
+    font-size: 12px;
+    justify-content: left !important;
+    color: gray;
+}

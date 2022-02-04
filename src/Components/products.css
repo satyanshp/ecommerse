@@ -1,0 +1,138 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    margin: 10px;
+    width: auto;
+    position: relative;
+    background-color: white;
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    border-bottom: solid rgba(128, 128, 128, 0.274) 1px;
+}
+.top button{
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+    width: 120px;
+    background-color: rgb(8, 119, 82);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 2px 10px gray;
+}
+.top button:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+
+
+
+.scroll{
+    position: absolute;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translate(0%,-50%);
+    z-index: 5;
+    color: rgba(0, 128, 0, 0.404);
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.418);
+    border: rgba(0, 0, 0, 0.329) solid 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    transition: 300ms;
+}
+.scrollLeft{
+    left:0;
+    margin-left: 10px;
+}
+.scrollRight{
+    right: 0;
+    margin-right: 10px;
+}
+.scroll:hover{
+    /* transform: scale(1.1); */
+    color: green;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.818);
+}
+
+
+
+
+.containt{
+    display: flex;
+    width: auto;
+    /* padding-top: 150px; */
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    scroll-behavior: auto;
+    /* transition: 300ms; */
+    -webkit-overflow-scrolling: touch;
+
+    
+}
+/* #containt:focus-within{
+    scroll-behavior: smooth;
+
+}
+#cont:focus-within{
+    scroll-behavior: smooth;
+} */
+.containt::-webkit-scrollbar{
+    display: none;
+}
+.product-container{
+    display: block;
+    /* border-right: solid rgba(128, 127, 127, 1) 1px; */
+    flex-direction: column;
+    width: 300px !important;
+    height: 350px;
+    margin: 10px 0px;
+
+}
+.product-container h2{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-weight: 650;
+}
+.product-container h3{
+    font-size: 12px;
+    font-weight: 550;
+    margin: 0;
+    padding: 0;
+    color:rgb(8, 119, 82) ;
+}
+.product-container h4{
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(163, 162, 162);
+    margin: 0;
+    padding: 0;
+}
+.product-container img{
+    display: block;
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    margin: 20px;
+}
+.product-container:hover > img 
+{ 
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}

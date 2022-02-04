@@ -1,0 +1,138 @@
+.popup-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1099;
+    display: flex;
+    background-color: white;
+    height: 550px;
+    width: 750px;
+    transition: 0.5s ease-in-out;
+    
+}
+.popup-form-container .close{
+    position: absolute;
+    right: 35px;
+    top: 25px;
+    cursor: pointer;
+}
+.popup-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    background-color: green;
+    padding: 10px;
+    color: white;
+    text-align: left;
+}
+.p-text{
+    padding: 10px 60px 10px 30px;
+}
+.p-text p{
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+.p-text h2{
+    font-size: 28px;
+}
+.popup-text .p-img{
+    /* width: 80%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-text img{
+    width: 80%;
+}
+
+
+
+.popup-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 50px 0;
+}
+.popup-form{
+    display: flex;
+    flex-direction: column;
+}
+.popup-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.popup-form form p{
+    padding: 0px 35px;
+    font-size: 12px !important;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: black;
+}
+.popup-form form p i{
+    text-decoration: none;
+    color: green;
+}
+.popup-form form input{
+    width: 84%;
+    height: 50px;
+    
+}
+.p-inp{
+    border: none;
+    border-bottom: solid gray 1px;
+    padding-top: 18px;
+    font-size: 14.5px;
+    margin-bottom: 17px;
+}
+.p-btn{
+    border: none;
+    color: white;
+    font-weight: bolder;
+    background-color: green;
+    cursor: pointer;
+}
+.popup-form h2{
+    font-size: 18px;
+    color: gray;
+    font-weight: 600;
+
+}
+.popup-form button{
+    width: 84%;
+    height: 50px;
+    border: none;
+    color: rgb(2, 70, 19);
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.5px 1.5px 5px gray;
+    cursor: pointer;
+}
+.popup-form p{
+    font-size: 13.5px;
+    cursor: pointer;
+    color: green;
+}
+.new-user{
+    font-size: 14.5px;
+    font-weight: 600;
+    color: green;
+    cursor: pointer;
+}
+
+.overlay{
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.836);
+   z-index: 1002;
+}
