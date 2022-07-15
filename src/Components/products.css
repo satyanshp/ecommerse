@@ -76,7 +76,7 @@
     overflow-x: scroll;
     white-space: nowrap;
     scrollbar-width: none;
-    scroll-behavior: auto;
+    scroll-behavior: smooth !important;
     /* transition: 300ms; */
     -webkit-overflow-scrolling: touch;
 
